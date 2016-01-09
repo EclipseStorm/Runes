@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/cast_spell_padding_top"
+    android:paddingLeft="@dimen/cast_spell_padding_left"
+    android:orientation="horizontal"
+    tools:context=".CastSpell" >
+
+    <!-- Spell list -->
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/cast_spell_button_fireball"
+            android:layout_width="@dimen/cast_spell_button_width"
+            android:layout_height="@dimen/cast_spell_button_height"
+            android:layout_marginTop="@dimen/cast_spell_button_top"
+            android:background="@drawable/mainmenubutton"
+            android:button="@android:color/transparent"
+            android:text="@string/spell_fireball"
+            android:textSize="@dimen/cast_spell_button_text_size"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:id="@+id/cast_spell_button_paralyzing_ray"
+            android:layout_width="@dimen/cast_spell_button_width"
+            android:layout_height="@dimen/cast_spell_button_height"
+            android:layout_marginTop="@dimen/cast_spell_button_top"
+            android:background="@drawable/mainmenubutton"
+            android:button="@android:color/transparent"
+            android:text="@string/spell_paralyzing_ray"
+            android:textSize="@dimen/cast_spell_button_text_size"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:id="@+id/cast_spell_button_curse"
+            android:layout_width="@dimen/cast_spell_button_width"
+            android:layout_height="@dimen/cast_spell_button_height"
+            android:layout_marginTop="@dimen/cast_spell_button_top"
+            android:background="@drawable/mainmenubutton"
+            android:button="@android:color/transparent"
+            android:text="@string/spell_curse"
+            android:textSize="@dimen/cast_spell_button_text_size"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:id="@+id/cast_spell_button_arcane_shield"
+            android:layout_width="@dimen/cast_spell_button_width"
+            android:layout_height="@dimen/cast_spell_button_height"
+            android:layout_marginTop="@dimen/cast_spell_button_top"
+            android:background="@drawable/mainmenubutton"
+            android:button="@android:color/transparent"
+            android:text="@string/spell_arcane_shield"
+            android:textSize="@dimen/cast_spell_button_text_size"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:id="@+id/cast_spell_button_heal"
+            android:layout_width="@dimen/cast_spell_button_width"
+            android:layout_height="@dimen/cast_spell_button_height"
+            android:layout_marginTop="@dimen/cast_spell_button_top"
+            android:background="@drawable/mainmenubutton"
+            android:button="@android:color/transparent"
+            android:text="@string/spell_heal"
+            android:textSize="@dimen/cast_spell_button_text_size"
+            android:onClick="onRadioButtonClicked" />
+    </RadioGroup>
+
+    <!-- Spell description -->
+
+    <TextView
+        android:id="@+id/cast_spell_description"
+        android:layout_width="wrap_content"
+        android:maxWidth="@dimen/cast_spell_description_max_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cast_spell_rune"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/cast_spell_description_text_size" />
+
+    <!-- Spell rune -->
+
+    <ImageView
+        android:id="@+id/cast_spell_rune"
+        android:layout_width="@dimen/cast_spell_rune_width"
+        android:layout_height="@dimen/cast_spell_rune_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/cast_spell_rune_top" />
+
+    <!-- Confirm spell button -->
+
+    <Button
+        android:id="@+id/cast_spell_button_select"
+        android:layout_width="@dimen/cast_spell_select_button_width"
+        android:layout_height="@dimen/cast_spell_select_button_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/cast_spell_select_button_right"
+        android:layout_marginBottom="@dimen/cast_spell_select_button_bottom"
+        android:background="@drawable/mainmenubutton"
+        android:text="@string/cast_spell"
+        android:textSize="@dimen/cast_spell_select_button_text_size"
+        android:onClick="onButtonClicked" />
+
+</RelativeLayout>

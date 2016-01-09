@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Runes</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Activities titles -->
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_play_menu">Play Menu</string>
+    <string name="title_activity_stats">Stats</string>
+    <string name="title_activity_player_vs_ai">Player Vs AI</string>
+    <string name="title_activity_cast_spell">Cast Spell</string>
+
+    <!-- Main menu buttons -->
+    <string name="play">Play</string>
+    <string name="stats">Stats</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+
+    <!-- Game lobby buttons -->
+    <string name="game_mode">Game Mode:</string>
+    <string name="single_player">Single Player</string>
+    <string name="multiplayer">Multiplayer</string>
+    <string name="player_vs_ai">Player vs AI</string>
+    <string name="normal_same_screen">Normal (same screen)</string>
+    <string name="normal_online">Normal (online)</string>
+    <string name="hardcore_online">Hardcore (online)</string>
+
+    <!-- About -->
+    <string name="created_by">Runes, a game created by Víctor Álvarez Romero</string>
+    <string name="how_to_play">How to play:</string>
+    <string name="game_description">Runes is a game where two powerful mages fight in an intense duel. Players have a
+        wide range of spells at their disposal with very different effects. Each of them has a rune associated, and the
+        players will have to draw it in the touch screen so they can unleash their power.</string>
+    <string name="game_modes">Game modes:</string>
+    <string name="game_mode_normal">Normal:
+        The game ... by turns. One of the players is the attacker and the other one is the defender.
+        The attacker chooses the spell he wants to cast and then both players will have to draw its associated rune.
+        Taking into account the time needed to draw it and how much precission they had, each player will get a score.
+        The higher score wins the round. If the attacker wins, he casts the spell successfully and a new turn begins with him as the attacker again.
+        On the other hand, if the defender is the winner he makes the enemy spell take no effect and in the next turn he will be the attacker.
+        The game goes on until one of the mages has his life reduced to 0. </string>
+    <string name="game_mode_hardcore">Hardcore:
+        In this game mode there are no turns.
+        The players cast their spells as fast as possible.
+        The precission when drawing the runes determines the effectiveness of the spell. </string>
+    <string name="spell_list">Spell list:</string>
+
+    <!-- Spell list -->
+    <string name="spell_fireball">Fireball</string>
+    <string name="spell_paralyzing_ray">Paralyzing Ray</string>
+    <string name="spell_curse">Curse</string>
+    <string name="spell_arcane_shield">Arcane Shield</string>
+    <string name="spell_heal">Heal</string>
+
+    <!-- Spell descriptions -->
+    <string name="spell_description_fireball">Inflicts 30 damage points to the opponent.</string>
+    <string name="spell_description_paralyzing_ray">Makes 10 damage points to the opponent. Has a 20% chance to stun the enemy, preventing him to block your next spell.</string>
+    <string name="spell_description_curse">Increases the cast time for the next enemy spell +0.5 seconds.</string>
+    <string name="spell_description_arcane_shield">Block up to 30 damage points. You lose the initiative and become the defender. Not stackable (if you already have a shield up, it is renewed).</string>
+    <string name="spell_description_heal">You are healed for 25 life points. You lose the initiative and become the defender.</string>
+    <!-- Hardcore -->
+    <string name="spell_description_fireball_hardcore">Inflicts 5 - 25 damage points to the opponent.</string>
+    <string name="spell_description_paralyzing_ray_hardcore">Makes 0 - 10 damage points to the opponent. Has a 5 - 20% chance to stun the enemy, preventing him to make any actions for 0.5 - 2 seconds.</string>
+    <string name="spell_description_curse_hardcore">Reduce the effects of the next spell cast by the opponent by 50%.</string>
+    <string name="spell_description_arcane_shield_hardcore">Block up to 5 - 30 damage points. Not stackable (if you already have a shield up, it is renewed).</string>
+    <string name="spell_description_heal_hardcore">You are healed for 5 - 25 life points.</string>
+
+    <!-- Cast spell button -->
+    <string name="cast_spell">Cast Spell</string>
+    <string name="title_activity_draw_rune">DrawRune</string>
+
+    <!-- Draw Rune -->
+    <string name="cast_time">Cast time: </string>
+    <string name="cast_score">Score: </string>
+    <string name="cast_effectiveness">Effectiveness: </string>
+
+    <!-- In-Game -->
+    <string name="attacking_position">(Attacker)</string>
+    <string name="defending_position">(Defender)</string>
+    <string name="stunned">Stunned</string>
+    <string name="cursed">Cursed</string>
+    <string name="cast_successful">Cast successful!</string>
+    <string name="countercast">Countercast!</string>
+    <string name="victory">Victory!</string>
+    <string name="defeat">Defeat!</string>
+    <string name="title_activity_player_vs_player_same_screen">PlayerVsPlayerSameScreen</string>
+</resources>

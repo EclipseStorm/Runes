@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context=".PlayMenu">
+
+    <!-- Player profile -->
+
+    <ImageView
+        android:id="@+id/play_menu_player_avatar"
+        android:layout_width="@dimen/play_menu_avatar_width"
+        android:layout_height="@dimen/play_menu_avatar_height"
+        android:src="@drawable/avatar1" />
+
+    <TextView
+        android:id="@+id/play_menu_player_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play_menu_game_mode"
+        android:layout_alignTop="@+id/play_menu_player_avatar"
+        android:layout_marginLeft="@dimen/play_menu_player_name_left"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Player Name"
+        android:textSize="@dimen/play_menu_player_name_text_size" />
+
+    <TextView
+        android:id="@+id/play_menu_player_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play_menu_player_name"
+        android:layout_alignLeft="@+id/play_menu_player_name"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Player Level"
+        android:textSize="@dimen/play_menu_player_level_text_size" />
+
+    <TextView
+        android:id="@+id/play_menu_level_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/play_menu_player_level"
+        android:layout_marginLeft="@dimen/play_menu_level_progress_left"
+        android:textColor="@color/colorPrimaryGreen"
+        android:text="(0 / 1000 XP)"
+        android:textSize="@dimen/play_menu_level_progress_text_size" />
+
+    <TextView
+        android:id="@+id/play_menu_player_rank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play_menu_player_level"
+        android:layout_alignLeft="@+id/play_menu_player_level"
+        android:layout_marginTop="@dimen/play_menu_player_rank_top"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Rank #: Rank Name"
+        android:textSize="@dimen/play_menu_player_rank_text_size" />
+
+
+    <!-- Game mode selection -->
+
+    <TextView
+        android:id="@+id/play_menu_game_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play_menu_player_avatar"
+        android:layout_marginTop="@dimen/play_menu_game_mode_top"
+        android:layout_marginLeft="@dimen/play_menu_game_mode_left"
+        android:textColor="@color/colorAccent"
+        android:text="@string/game_mode"
+        android:textSize="@dimen/play_menu_game_mode_text_size" />
+
+    <TextView
+        android:id="@+id/play_menu_single_player"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play_menu_game_mode"
+        android:layout_alignLeft="@+id/play_menu_game_mode"
+        android:layout_marginTop="@dimen/about_section_top"
+        android:layout_marginLeft="@dimen/play_menu_section_left"
+        android:textColor="@color/white"
+        android:text="@string/single_player"
+        android:textSize="@dimen/play_menu_section_text_size" />
+
+    <Button
+        android:id="@+id/play_menu_player_vs_ai_button"
+        android:layout_width="@dimen/play_menu_button_width"
+        android:layout_height="@dimen/play_menu_button_height"
+        android:layout_below="@+id/play_menu_single_player"
+        android:layout_marginTop="@dimen/play_menu_button_top"
+        android:layout_marginLeft="@dimen/play_menu_button_left"
+        android:background="@drawable/mainmenubutton"
+        android:text="@string/player_vs_ai"
+        android:textSize="@dimen/play_menu_button_text_size" />
+
+    <TextView
+        android:id="@+id/play_menu_multiplayer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play_menu_player_vs_ai_button"
+        android:layout_alignLeft="@+id/play_menu_single_player"
+        android:textColor="@color/white"
+        android:text="@string/multiplayer"
+        android:textSize="@dimen/play_menu_section_text_size" />
+
+    <Button
+        android:id="@+id/play_menu_same_screen_normal_button"
+        android:layout_width="@dimen/play_menu_button_width"
+        android:layout_height="@dimen/play_menu_button_height"
+        android:layout_below="@+id/play_menu_multiplayer"
+        android:layout_alignLeft="@+id/play_menu_player_vs_ai_button"
+        android:layout_marginTop="@dimen/play_menu_button_top"
+        android:background="@drawable/mainmenubutton"
+        android:text="@string/normal_same_screen"
+        android:textSize="@dimen/play_menu_button_text_size" />
+
+    <Button
+        android:id="@+id/play_menu_online_normal_button"
+        android:layout_width="@dimen/play_menu_button_width"
+        android:layout_height="@dimen/play_menu_button_height"
+        android:layout_below="@+id/play_menu_same_screen_normal_button"
+        android:layout_alignLeft="@+id/play_menu_same_screen_normal_button"
+        android:layout_marginTop="@dimen/play_menu_button_top"
+        android:background="@drawable/mainmenubutton"
+        android:text="@string/normal_online"
+        android:textSize="@dimen/play_menu_button_text_size" />
+
+    <Button
+        android:id="@+id/play_menu_online_hardcore_button"
+        android:layout_width="@dimen/play_menu_button_width"
+        android:layout_height="@dimen/play_menu_button_height"
+        android:layout_alignTop="@+id/play_menu_online_normal_button"
+        android:layout_marginLeft="@dimen/play_menu_button_hardcore_left"
+        android:background="@drawable/mainmenubutton"
+        android:text="@string/hardcore_online"
+        android:textSize="@dimen/play_menu_button_text_size" />
+
+</RelativeLayout>

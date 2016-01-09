@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context=".PlayerVsAI" >
+
+
+    <!--  Top-left profile info of Player 1 -->
+
+    <ImageView
+        android:id="@+id/battle_player1_avatar"
+        android:layout_width="@dimen/battle_avatar_width"
+        android:layout_height="@dimen/battle_avatar_height"
+        android:src="@drawable/avatar1" />
+
+    <TextView
+        android:id="@+id/battle_player1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/battle_player1_avatar"
+        android:layout_marginLeft="@dimen/battle_player_name_margin"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Player 1 Name"
+        android:textSize="@dimen/battle_player_name_text_size" />
+
+    <TextView
+        android:id="@+id/battle_player1_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/battle_player1_name"
+        android:layout_alignLeft="@+id/battle_player1_name"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Player 1 Level"
+        android:textSize="@dimen/battle_player_level_text_size" />
+
+    <TextView
+        android:id="@+id/battle_player1_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/battle_player1_level"
+        android:layout_toRightOf="@+id/battle_player1_level"
+        android:layout_marginLeft="@dimen/battle_player_rank_margin"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Player 1 Rank"
+        android:textSize="@dimen/battle_player_rank_text_size" />
+
+    <TextView
+        android:id="@+id/battle_player1_life"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/battle_player1_level"
+        android:layout_alignLeft="@+id/battle_player1_level"
+        android:layout_marginTop="@dimen/battle_player_life_top"
+        android:layout_marginLeft="@dimen/battle_player_life_horizontal"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Player 1 Life"
+        android:textSize="@dimen/battle_player_life_text_size" />
+
+
+    <!--  Top-right profile info of Player 2 -->
+
+    <ImageView
+        android:id="@+id/battle_player2_avatar"
+        android:layout_width="@dimen/battle_avatar_width"
+        android:layout_height="@dimen/battle_avatar_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/avatar1" />
+
+    <TextView
+        android:id="@+id/battle_player2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/battle_player2_avatar"
+        android:layout_marginRight="@dimen/battle_player_name_margin"
+        android:textColor="@color/colorAccent"
+        android:text="Player 2 Name"
+        android:textSize="@dimen/battle_player_name_text_size" />
+
+    <TextView
+        android:id="@+id/battle_player2_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/battle_player2_name"
+        android:layout_toLeftOf="@+id/battle_player2_rank"
+        android:textColor="@color/colorAccent"
+        android:text="Player 2 Level"
+        android:textSize="@dimen/battle_player_level_text_size" />
+
+    <TextView
+        android:id="@+id/battle_player2_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/battle_player2_name"
+        android:layout_alignBottom="@+id/battle_player2_level"
+        android:layout_marginLeft="@dimen/battle_player_rank_margin"
+        android:textColor="@color/colorAccent"
+        android:text="Player 2 Rank"
+        android:textSize="@dimen/battle_player_rank_text_size" />
+
+    <TextView
+        android:id="@+id/battle_player2_life"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/battle_player2_rank"
+        android:layout_alignRight="@+id/battle_player2_rank"
+        android:layout_marginTop="@dimen/battle_player_life_top"
+        android:layout_marginRight="@dimen/battle_player_life_horizontal"
+        android:textColor="@color/colorAccent"
+        android:text="Player 2 Life"
+        android:textSize="@dimen/battle_player_life_text_size" />
+
+
+    <!--  Images for both players' mages -->
+
+    <ImageView
+        android:id="@+id/battle_player1_character"
+        android:layout_width="@dimen/battle_character_width"
+        android:layout_height="@dimen/battle_character_height"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/battle_player1_avatar"
+        android:layout_marginTop="@dimen/battle_character_top"
+        android:src="@drawable/mage1" />
+
+    <ImageView
+        android:id="@+id/battle_player2_character"
+        android:layout_width="@dimen/battle_character_width"
+        android:layout_height="@dimen/battle_character_height"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/battle_player2_avatar"
+        android:layout_marginTop="@dimen/battle_character_top"
+        android:src="@drawable/mage2" />
+
+    <!-- State change message for both players' mages -->
+
+    <TextView
+        android:id="@+id/battle_player1_state_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/battle_player1_character"
+        android:layout_alignTop="@+id/battle_player1_character"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/battle_state_message_text_size" />
+
+    <TextView
+        android:id="@+id/battle_player2_state_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/battle_player2_character"
+        android:layout_alignTop="@+id/battle_player2_character"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/battle_state_message_text_size" />
+
+    <!-- Score indicator message for both players -->
+
+    <TextView
+        android:id="@+id/battle_player1_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/battle_player1_character"
+        android:layout_below="@+id/battle_player1_character"
+        android:layout_marginTop="@dimen/battle_score_top"
+        android:textColor="@color/white"
+        android:textSize="@dimen/battle_score_text_size" />
+
+    <TextView
+        android:id="@+id/battle_player2_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/battle_player2_character"
+        android:layout_below="@+id/battle_player2_character"
+        android:layout_marginTop="@dimen/battle_score_top"
+        android:textColor="@color/white"
+        android:textSize="@dimen/battle_score_text_size" />
+
+    <!-- Attacking / Defending position indicators -->
+
+    <TextView
+        android:id="@+id/battle_player1_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/battle_player1_character"
+        android:layout_alignBottom="@+id/battle_player1_character"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/battle_position_text_size" />
+
+    <TextView
+        android:id="@+id/battle_player2_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/battle_player2_character"
+        android:layout_alignBottom="@+id/battle_player2_character"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/battle_position_text_size" />
+
+
+    <!-- Info message -->
+
+    <TextView
+        android:id="@+id/battle_info_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/battle_info_message_text_size" />
+
+
+    <!--  Casting spell button -->
+
+    <Button
+        android:id="@+id/CastSpellButton"
+        android:layout_width="@dimen/battle_cast_spell_button_width"
+        android:layout_height="@dimen/battle_cast_spell_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mainmenubutton"
+        android:text="@string/cast_spell"
+        android:textSize="@dimen/battle_cast_spell_button_text_size" />
+
+</RelativeLayout>

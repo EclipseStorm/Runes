@@ -1,0 +1,103 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Main menu -->
+    <dimen name="main_menu_app_name_top">40dp</dimen>
+    <dimen name="main_menu_app_name_bottom">40dp</dimen>
+
+    <dimen name="main_menu_app_name_text_size">30sp</dimen>
+
+    <!-- Main menu buttons -->
+    <dimen name="main_menu_button_width">140dp</dimen>
+    <dimen name="main_menu_button_height">35dp</dimen>
+    <dimen name="main_menu_button_top">5dp</dimen>
+
+    <!-- Play menu -->
+    <dimen name="play_menu_avatar_width">80dp</dimen>
+    <dimen name="play_menu_avatar_height">80dp</dimen>
+    <dimen name="play_menu_player_name_left">90dp</dimen>
+    <dimen name="play_menu_level_progress_left">160dp</dimen>
+    <dimen name="play_menu_player_rank_top">10dp</dimen>
+    <dimen name="play_menu_game_mode_top">10dp</dimen>
+    <dimen name="play_menu_game_mode_left">10dp</dimen>
+    <dimen name="play_menu_section_top">10dp</dimen>
+    <dimen name="play_menu_section_left">20dp</dimen>
+
+    <!-- Play menu text size -->
+    <dimen name="play_menu_player_name_text_size">20sp</dimen>
+    <dimen name="play_menu_player_level_text_size">16sp</dimen>
+    <dimen name="play_menu_level_progress_text_size">14sp</dimen>
+    <dimen name="play_menu_player_rank_text_size">16sp</dimen>
+    <dimen name="play_menu_game_mode_text_size">24sp</dimen>
+    <dimen name="play_menu_section_text_size">20sp</dimen>
+
+    <!-- Play menu buttons -->
+    <dimen name="play_menu_button_width">130dp</dimen>
+    <dimen name="play_menu_button_height">30dp</dimen>
+    <dimen name="play_menu_button_top">5dp</dimen>
+    <dimen name="play_menu_button_left">40dp</dimen>
+    <dimen name="play_menu_button_hardcore_left">200dp</dimen>
+    <dimen name="play_menu_button_text_size">12sp</dimen>
+
+    <!-- Battle screen -->
+    <dimen name="battle_avatar_width">60dp</dimen>
+    <dimen name="battle_avatar_height">60dp</dimen>
+    <dimen name="battle_player_name_margin">70dp</dimen>
+    <dimen name="battle_player_rank_margin">10dp</dimen>
+    <dimen name="battle_player_life_top">10dp</dimen>
+    <dimen name="battle_player_life_horizontal">10dp</dimen>
+    <dimen name="battle_character_width">140dp</dimen>
+    <dimen name="battle_character_height">160dp</dimen>
+    <dimen name="battle_character_top">10dp</dimen>
+    <dimen name="battle_score_top">10dp</dimen>
+
+    <dimen name="battle_cast_spell_button_width">100dp</dimen>
+    <dimen name="battle_cast_spell_button_height">30dp</dimen>
+    <dimen name="battle_cast_spell_button_text_size">12sp</dimen>
+
+    <!-- Battle screen text size -->
+    <dimen name="battle_player_name_text_size">16sp</dimen>
+    <dimen name="battle_player_level_text_size">12sp</dimen>
+    <dimen name="battle_player_rank_text_size">12sp</dimen>
+    <dimen name="battle_player_life_text_size">16sp</dimen>
+    <dimen name="battle_state_message_text_size">18sp</dimen>
+    <dimen name="battle_score_text_size">14sp</dimen>
+    <dimen name="battle_position_text_size">14sp</dimen>
+    <dimen name="battle_info_message_text_size">32sp</dimen>
+
+    <!-- Cast Spell screen -->
+    <dimen name="cast_spell_padding_top">50dp</dimen>
+    <dimen name="cast_spell_padding_left">15dp</dimen>
+    <dimen name="cast_spell_description_max_width">300dp</dimen>
+    <dimen name="cast_spell_rune_width">200dp</dimen>
+    <dimen name="cast_spell_rune_height">200dp</dimen>
+    <dimen name="cast_spell_rune_top">20dp</dimen>
+
+    <dimen name="cast_spell_button_width">120dp</dimen>
+    <dimen name="cast_spell_button_height">35dp</dimen>
+    <dimen name="cast_spell_button_top">5dp</dimen>
+    <dimen name="cast_spell_select_button_width">150dp</dimen>
+    <dimen name="cast_spell_select_button_height">40dp</dimen>
+    <dimen name="cast_spell_select_button_right">20dp</dimen>
+    <dimen name="cast_spell_select_button_bottom">10dp</dimen>
+
+    <dimen name="cast_spell_button_text_size">12sp</dimen>
+    <dimen name="cast_spell_select_button_text_size">14sp</dimen>
+
+    <dimen name="cast_spell_description_text_size">12sp</dimen>
+
+    <!-- Draw Rune screen -->
+    <dimen name="draw_rune_cast_time">20dp</dimen>
+    <dimen name="draw_rune_cast_score">10dp</dimen>
+    <dimen name="draw_rune_spell_rune_margin">40dp</dimen>
+    <dimen name="draw_rune_cast_effectiveness_bottom">20dp</dimen>
+
+    <!-- About -->
+    <dimen name="about_spell_name_top">15dp</dimen>
+    <dimen name="about_section_top">10dp</dimen>
+    <dimen name="about_text_top">10dp</dimen>
+    <dimen name="about_spell_rune_width">80dp</dimen>
+    <dimen name="about_spell_rune_height">80dp</dimen>
+</resources>
