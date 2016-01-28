@@ -3,9 +3,13 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <!-- Splash screen -->
+    <dimen name="splash_screen_logo_width">360dp</dimen>
+    <dimen name="splash_screen_logo_height">120dp</dimen>
+
     <!-- Main menu -->
-    <dimen name="main_menu_app_name_top">40dp</dimen>
-    <dimen name="main_menu_app_name_bottom">40dp</dimen>
+    <dimen name="main_menu_app_name_top">120dp</dimen>
+    <dimen name="main_menu_app_name_bottom">80dp</dimen>
 
     <dimen name="main_menu_app_name_text_size">30sp</dimen>
 

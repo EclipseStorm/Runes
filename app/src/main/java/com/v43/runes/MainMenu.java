@@ -2,12 +2,17 @@ package com.v43.runes;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 public class MainMenu extends Activity implements View.OnClickListener {
     public static final String LOG_BASE = "Runes";
@@ -18,6 +23,14 @@ public class MainMenu extends Activity implements View.OnClickListener {
         Log.d(LOG_TAG, "onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+
+        LinearLayout menuLayout = (LinearLayout) findViewById(R.id.main_menu_layout);
+
+        Animation animFadeIn = AnimationUtils.loadAnimation(this, R.anim.splash_screen_fadein);
+        menuLayout.startAnimation(animFadeIn);
+
+        ImageView appName = (ImageView) findViewById(R.id.main_menu_app_name);
+        appName.setImageAlpha(1);
 
         Button playButton = (Button) findViewById(R.id.main_menu_play_button);
         playButton.setOnClickListener(this);

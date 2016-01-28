@@ -12,54 +12,62 @@
     android:background="@drawable/background"
     tools:context=".MainMenu">
 
-    <TextView
+    <ImageView
         android:id="@+id/main_menu_app_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/splash_screen_logo_width"
+        android:layout_height="@dimen/splash_screen_logo_height"
         android:layout_marginTop="@dimen/main_menu_app_name_top"
         android:layout_marginBottom="@dimen/main_menu_app_name_bottom"
-        android:textColor="@color/colorPrimary"
         android:gravity="center_horizontal"
-        android:text="@string/app_name"
-        android:textSize="@dimen/main_menu_app_name_text_size" />
+        android:background="@drawable/logo" />
 
-    <Button
-        android:id="@+id/main_menu_play_button"
-        android:layout_width="@dimen/main_menu_button_width"
-        android:layout_height="@dimen/main_menu_button_height"
-        android:background="@drawable/mainmenubutton"
-        android:text="@string/play" />
+    <LinearLayout
+        android:id="@+id/main_menu_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
 
-    <Button
-        android:id="@+id/main_menu_stats_button"
-        android:layout_width="@dimen/main_menu_button_width"
-        android:layout_height="@dimen/main_menu_button_height"
-        android:layout_marginTop="@dimen/main_menu_button_top"
-        android:background="@drawable/mainmenubutton"
-        android:text="@string/stats" />
+        <Button
+            android:id="@+id/main_menu_play_button"
+            android:layout_width="@dimen/main_menu_button_width"
+            android:layout_height="@dimen/main_menu_button_height"
+            android:background="@drawable/mainmenubutton"
+            android:text="@string/play" />
 
-    <Button
-        android:id="@+id/main_menu_settings_button"
-        android:layout_width="@dimen/main_menu_button_width"
-        android:layout_height="@dimen/main_menu_button_height"
-        android:layout_marginTop="@dimen/main_menu_button_top"
-        android:background="@drawable/mainmenubutton"
-        android:text="@string/settings" />
+        <Button
+            android:id="@+id/main_menu_stats_button"
+            android:layout_width="@dimen/main_menu_button_width"
+            android:layout_height="@dimen/main_menu_button_height"
+            android:layout_marginTop="@dimen/main_menu_button_top"
+            android:background="@drawable/mainmenubutton"
+            android:text="@string/stats" />
 
-    <Button
-        android:id="@+id/main_menu_about_button"
-        android:layout_width="@dimen/main_menu_button_width"
-        android:layout_height="@dimen/main_menu_button_height"
-        android:layout_marginTop="@dimen/main_menu_button_top"
-        android:background="@drawable/mainmenubutton"
-        android:text="@string/about" />
+        <Button
+            android:id="@+id/main_menu_settings_button"
+            android:layout_width="@dimen/main_menu_button_width"
+            android:layout_height="@dimen/main_menu_button_height"
+            android:layout_marginTop="@dimen/main_menu_button_top"
+            android:background="@drawable/mainmenubutton"
+            android:text="@string/settings" />
 
-    <Button
-        android:id="@+id/main_menu_exit_button"
-        android:layout_width="@dimen/main_menu_button_width"
-        android:layout_height="@dimen/main_menu_button_height"
-        android:layout_marginTop="@dimen/main_menu_button_top"
-        android:background="@drawable/mainmenubutton"
-        android:text="@string/exit" />
+        <Button
+            android:id="@+id/main_menu_about_button"
+            android:layout_width="@dimen/main_menu_button_width"
+            android:layout_height="@dimen/main_menu_button_height"
+            android:layout_marginTop="@dimen/main_menu_button_top"
+            android:background="@drawable/mainmenubutton"
+            android:text="@string/about" />
+
+        <Button
+            android:id="@+id/main_menu_exit_button"
+            android:layout_width="@dimen/main_menu_button_width"
+            android:layout_height="@dimen/main_menu_button_height"
+            android:layout_marginTop="@dimen/main_menu_button_top"
+            android:background="@drawable/mainmenubutton"
+            android:text="@string/exit" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
