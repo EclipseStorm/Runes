@@ -93,10 +93,12 @@
     <dimen name="cast_spell_description_text_size">12sp</dimen>
 
     <!-- Draw Rune screen -->
-    <dimen name="draw_rune_cast_time">20dp</dimen>
-    <dimen name="draw_rune_cast_score">10dp</dimen>
+    <dimen name="draw_rune_cast_time">40dp</dimen>
+    <dimen name="draw_rune_cast_score">20dp</dimen>
     <dimen name="draw_rune_spell_rune_margin">40dp</dimen>
-    <dimen name="draw_rune_cast_effectiveness_bottom">20dp</dimen>
+    <dimen name="draw_rune_cast_effectiveness_bottom">40dp</dimen>
+
+    <dimen name="draw_rune_text_size">32sp</dimen>
 
     <!-- About -->
     <dimen name="about_spell_name_top">15dp</dimen>

@@ -20,7 +20,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="@dimen/draw_rune_cast_time" />
+        android:layout_marginTop="@dimen/draw_rune_cast_time"
+        android:textSize="@dimen/draw_rune_text_size" />
 
     <TextView
         android:id="@+id/draw_rune_cast_score"
@@ -28,7 +29,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/draw_rune_cast_time"
-        android:layout_marginTop="@dimen/draw_rune_cast_score" />
+        android:layout_marginTop="@dimen/draw_rune_cast_score"
+        android:textSize="@dimen/draw_rune_text_size" />
 
     <ImageView
         android:id="@+id/draw_rune_spell_rune"
@@ -43,6 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/draw_rune_cast_effectiveness_bottom" />
+        android:layout_marginBottom="@dimen/draw_rune_cast_effectiveness_bottom"
+        android:textSize="@dimen/draw_rune_text_size" />
 
 </RelativeLayout>

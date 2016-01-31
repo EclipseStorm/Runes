@@ -231,11 +231,21 @@ public class PlayerVsAI extends Activity {
                         player1Position.setText(getString(R.string.attacking_position));
                         player2Position.setText(getString(R.string.defending_position));
                         defender = player2;
+
+                        // Set the CastSpell button to Visible
+                        castSpellButton.setVisibility(View.VISIBLE);
+                        player1Position.setText(getString(R.string.attacking_position));
+                        player2Position.setText(getString(R.string.defending_position));
                     }
                     else{
                         player1Position.setText(getString(R.string.defending_position));
                         player2Position.setText(getString(R.string.attacking_position));
                         defender = player1;
+
+                        // Set the CastSpell button to Invisible
+                        castSpellButton.setVisibility(View.INVISIBLE);
+                        player1Position.setText(getString(R.string.defending_position));
+                        player2Position.setText(getString(R.string.attacking_position));
                     }
 
                     new Handler().postDelayed(new Runnable() {
@@ -257,18 +267,7 @@ public class PlayerVsAI extends Activity {
 
     public void turn() {
 
-        if (attacker == player1) {
-            // Set the CastSpell button to Visible
-            castSpellButton.setVisibility(View.VISIBLE);
-            player1Position.setText(getString(R.string.attacking_position));
-            player2Position.setText(getString(R.string.defending_position));
-        }
-        else {
-            // Set the CastSpell button to Invisible
-            castSpellButton.setVisibility(View.INVISIBLE);
-            player1Position.setText(getString(R.string.defending_position));
-            player2Position.setText(getString(R.string.attacking_position));
-
+        if (!(attacker == player1)) {
             // Select a spell
             int spell = AI.aiSelectSpell(player1, player2);
 
