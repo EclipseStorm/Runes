@@ -3,17 +3,12 @@ package com.v43.runes;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AlertDialog;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.v43.runes.model.Wizard;
@@ -23,7 +18,7 @@ import java.text.DecimalFormat;
 public class PlayerVsAI extends Activity {
 
     private final int NEW_TURN_TIMEOUT = 1200;
-    final Context context = this;
+    private final Context context = this;
 
     // Players Wizards
 
@@ -67,10 +62,6 @@ public class PlayerVsAI extends Activity {
     private Button castSpellButton;
 
 
-    // Game over trigger
-    private boolean victory;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,8 +69,6 @@ public class PlayerVsAI extends Activity {
 
         player1 = new Wizard();
         player2 = new Wizard();
-
-        victory = false;
 
         player1LifeBar = (TextView) findViewById(R.id.battle_player1_life);
         player2LifeBar = (TextView) findViewById(R.id.battle_player2_life);
@@ -225,12 +214,10 @@ public class PlayerVsAI extends Activity {
                 if (player1.getHp() <= 0) {
                     // Player 2 wins
                     infoMessage.setText(getString(R.string.defeat));
-                    victory = true;
                 }
                 else if (player2.getHp() <= 0) {
                     // Player 1 wins
                     infoMessage.setText(getString(R.string.victory));
-                    victory = true;
                     castSpellButton.setVisibility(View.INVISIBLE);
                 }
                 else {
@@ -269,12 +256,12 @@ public class PlayerVsAI extends Activity {
         }
     }
 
-    public void castSpell() {
+    private void castSpell() {
         Intent i = new Intent(this, CastSpell.class);
         startActivityForResult(i, 0);
     }
 
-    public void turn() {
+    private void turn() {
 
         if (!(attacker == player1)) {
             // Select a spell
@@ -296,7 +283,7 @@ public class PlayerVsAI extends Activity {
         }
     }
 
-    public void resolveSpell(int spell, Wizard attacker, Wizard defender) {
+    private void resolveSpell(int spell, Wizard attacker, Wizard defender) {
 
         if (spell == 1) {
             //Fireball

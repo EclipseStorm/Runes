@@ -39,7 +39,7 @@
         players will have to draw it in the touch screen so they can unleash their power.</string>
     <string name="game_modes">Game modes:</string>
     <string name="game_mode_normal">Normal:
-        The game ... by turns. One of the players is the attacker and the other one is the defender.
+        The game … by turns. One of the players is the attacker and the other one is the defender.
         The attacker chooses the spell he wants to cast and then both players will have to draw its associated rune.
         Taking into account the time needed to draw it and how much precission they had, each player will get a score.
         The higher score wins the round. If the attacker wins, he casts the spell successfully and a new turn begins with him as the attacker again.
@@ -65,11 +65,11 @@
     <string name="spell_description_arcane_shield">Block up to 30 damage points. You lose the initiative and become the defender. Not stackable (if you already have a shield up, it is renewed).</string>
     <string name="spell_description_heal">You are healed for 25 life points. You lose the initiative and become the defender.</string>
     <!-- Hardcore -->
-    <string name="spell_description_fireball_hardcore">Inflicts 5 - 25 damage points to the opponent.</string>
-    <string name="spell_description_paralyzing_ray_hardcore">Makes 0 - 10 damage points to the opponent. Has a 5 - 20% chance to stun the enemy, preventing him to make any actions for 0.5 - 2 seconds.</string>
+    <string name="spell_description_fireball_hardcore">Inflicts 5 – 25 damage points to the opponent.</string>
+    <string name="spell_description_paralyzing_ray_hardcore">Makes 0 – 10 damage points to the opponent. Has a 5 - 20% chance to stun the enemy, preventing him to make any actions for 0.5 - 2 seconds.</string>
     <string name="spell_description_curse_hardcore">Reduce the effects of the next spell cast by the opponent by 50%.</string>
-    <string name="spell_description_arcane_shield_hardcore">Block up to 5 - 30 damage points. Not stackable (if you already have a shield up, it is renewed).</string>
-    <string name="spell_description_heal_hardcore">You are healed for 5 - 25 life points.</string>
+    <string name="spell_description_arcane_shield_hardcore">Block up to 5 – 30 damage points. Not stackable (if you already have a shield up, it is renewed).</string>
+    <string name="spell_description_heal_hardcore">You are healed for 5 – 25 life points.</string>
 
     <!-- Cast spell button -->
     <string name="cast_spell">Cast Spell</string>

@@ -8,10 +8,8 @@ import android.gesture.GestureLibrary;
 import android.gesture.GestureOverlayView;
 import android.gesture.Prediction;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -37,7 +35,7 @@ public class DrawRune extends Activity implements GestureOverlayView.OnGesturePe
     private int spell;
     private double score;
 
-    Intent resultIntent = new Intent();
+    private Intent resultIntent = new Intent();
 
     @Override
     public void onBackPressed() {
@@ -127,7 +125,7 @@ public class DrawRune extends Activity implements GestureOverlayView.OnGesturePe
         }
     }
 
-    public void runeMatches() {
+    private void runeMatches() {
         double timeFinal = System.currentTimeMillis();
         double timeCast = (timeFinal - timeInitial) / 1000;
 

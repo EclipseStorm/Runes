@@ -5,7 +5,7 @@ import com.v43.runes.model.Wizard;
 public class AI {
 
     public static int aiSelectSpell(Wizard player1, Wizard player2) {
-        int spell = 0;
+        int spell;
         int random = (int) (Math.random() * 100) + 1; // Goes from 1 to 100
 
         if (player2.getShield() <= 10 && random <= 40) {

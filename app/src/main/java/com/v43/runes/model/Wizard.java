@@ -38,8 +38,8 @@ public class Wizard {
         }
     }
 
-    public void setShield(int shield){
-        this.shield = this.shield + shield;
+    public void setShield(int shieldPoints){
+        this.shield = this.shield + shieldPoints;
         if (this.shield > Constants.SHIELD_POINTS_MAX){
             this.shield = Constants.SHIELD_POINTS_MAX;
         }
