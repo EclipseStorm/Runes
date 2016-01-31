@@ -2,6 +2,11 @@
     <string name="app_name">Runes</string>
     <string name="action_settings">Settings</string>
 
+    <!-- General use -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="want_to_exit">Are you sure you want to exit?</string>
+
     <!-- Activities titles -->
     <string name="title_activity_about">About</string>
     <string name="title_activity_settings">Settings</string>

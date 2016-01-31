@@ -1,11 +1,19 @@
 package com.v43.runes;
 
 import android.app.Activity;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.AlertDialog;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.v43.runes.model.Wizard;
@@ -15,6 +23,7 @@ import java.text.DecimalFormat;
 public class PlayerVsAI extends Activity {
 
     private final int NEW_TURN_TIMEOUT = 1200;
+    final Context context = this;
 
     // Players Wizards
 
@@ -327,5 +336,28 @@ public class PlayerVsAI extends Activity {
             //Heal
             attacker.setLifePoints(Constants.HEAL_NORMAL);
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        final Dialog dialog = new Dialog(context);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_view);
+
+        Button yesButton = (Button) dialog.findViewById(R.id.dialog_yes_button);
+        yesButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+        Button noButton = (Button) dialog.findViewById(R.id.dialog_no_button);
+        noButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
     }
 }

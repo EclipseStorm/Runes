@@ -40,6 +40,11 @@ public class DrawRune extends Activity implements GestureOverlayView.OnGesturePe
     Intent resultIntent = new Intent();
 
     @Override
+    public void onBackPressed() {
+        // Do nothing when pressing BACK button
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_draw_rune);

@@ -106,4 +106,11 @@
     <dimen name="about_text_top">10dp</dimen>
     <dimen name="about_spell_rune_width">80dp</dimen>
     <dimen name="about_spell_rune_height">80dp</dimen>
+
+    <!-- Dialog view -->
+    <dimen name="dialog_padding">25dp</dimen>
+    <dimen name="dialog_text_top">10dp</dimen>
+    <dimen name="dialog_text_left">20dp</dimen>
+
+    <dimen name="dialog_text_size">32sp</dimen>
 </resources>
