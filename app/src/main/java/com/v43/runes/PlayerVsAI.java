@@ -3,6 +3,7 @@ package com.v43.runes;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -12,6 +13,8 @@ import com.v43.runes.model.Wizard;
 import java.text.DecimalFormat;
 
 public class PlayerVsAI extends Activity {
+
+    private final int NEW_TURN_TIMEOUT = 1200;
 
     // Players Wizards
 
@@ -234,7 +237,14 @@ public class PlayerVsAI extends Activity {
                         player2Position.setText(getString(R.string.attacking_position));
                         defender = player1;
                     }
-                    turn();
+
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            turn();
+                        }
+                    }, NEW_TURN_TIMEOUT);
+
                 }
             }
         }

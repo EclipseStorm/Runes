@@ -7,10 +7,12 @@ import android.gesture.GestureLibraries;
 import android.gesture.GestureLibrary;
 import android.gesture.GestureOverlayView;
 import android.gesture.Prediction;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,11 +20,17 @@ import java.util.ArrayList;
 
 public class DrawRune extends Activity implements GestureOverlayView.OnGesturePerformedListener {
 
+    private final int DRAW_RUNE_TIMEOUT = 2500;
+
     private GestureLibrary runeLibrary;
 
     private TextView castTime;
     private TextView castScore;
     private TextView castEffectiveness;
+
+    private GestureOverlayView gesturesView;
+
+    private ImageView spellRune;
 
     private double timeInitial;
 
@@ -43,12 +51,12 @@ public class DrawRune extends Activity implements GestureOverlayView.OnGesturePe
                 finish();
             }
             else {
-                GestureOverlayView gesturesView = (GestureOverlayView) findViewById(R.id.gestures);
+                gesturesView = (GestureOverlayView) findViewById(R.id.gestures);
                 gesturesView.addOnGesturePerformedListener(this);
             }
         }
 
-        ImageView spellRune = (ImageView) findViewById(R.id.draw_rune_spell_rune);
+        spellRune = (ImageView) findViewById(R.id.draw_rune_spell_rune);
         castTime = (TextView) findViewById(R.id.draw_rune_cast_time);
         castScore = (TextView) findViewById(R.id.draw_rune_cast_score);
         castEffectiveness = (TextView) findViewById(R.id.draw_rune_cast_effectiveness);
@@ -122,13 +130,24 @@ public class DrawRune extends Activity implements GestureOverlayView.OnGesturePe
         double finalScore = score * 4 - timeCast;
 
         castTime.setText(getString(R.string.cast_time) + " " + timeCast + " s");
-        castScore.setText(getString(R.string.cast_score) + " " + score);
+        castScore.setText(getString(R.string.cast_score) + " " + finalScore);
         castEffectiveness.setText(getString(R.string.cast_effectiveness) + " " + effectiveness + "%");
 
         // Put the values and finish
         resultIntent.putExtra("spell", spell);
         resultIntent.putExtra("score", finalScore);
         setResult(RESULT_OK, resultIntent);
-        finish();
+
+        // Disable gestures
+        gesturesView.setGestureVisible(false);
+        // Make rune invisible
+        spellRune.setVisibility(View.INVISIBLE);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                finish();
+            }
+        }, DRAW_RUNE_TIMEOUT);
     }
 }
