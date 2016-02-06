@@ -20,10 +20,10 @@
 
     <TextView
         android:id="@+id/play_menu_player_name"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/play_menu_game_mode"
         android:layout_alignTop="@+id/play_menu_player_avatar"
+        android:layout_toRightOf="@id/play_menu_player_avatar"
         android:layout_marginLeft="@dimen/play_menu_player_name_left"
         android:textColor="@color/colorPrimaryDark"
         android:text="Player Name"
@@ -31,7 +31,7 @@
 
     <TextView
         android:id="@+id/play_menu_player_level"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/play_menu_player_name"
         android:layout_alignLeft="@+id/play_menu_player_name"
@@ -41,9 +41,10 @@
 
     <TextView
         android:id="@+id/play_menu_level_progress"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/play_menu_player_level"
+        android:layout_toRightOf="@id/play_menu_player_level"
         android:layout_marginLeft="@dimen/play_menu_level_progress_left"
         android:textColor="@color/colorPrimaryGreen"
         android:text="(0 / 1000 XP)"
@@ -51,7 +52,7 @@
 
     <TextView
         android:id="@+id/play_menu_player_rank"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/play_menu_player_level"
         android:layout_alignLeft="@+id/play_menu_player_level"
@@ -65,7 +66,7 @@
 
     <TextView
         android:id="@+id/play_menu_game_mode"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/play_menu_player_avatar"
         android:layout_marginTop="@dimen/play_menu_game_mode_top"
@@ -76,7 +77,7 @@
 
     <TextView
         android:id="@+id/play_menu_single_player"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/play_menu_game_mode"
         android:layout_alignLeft="@+id/play_menu_game_mode"
@@ -99,7 +100,7 @@
 
     <TextView
         android:id="@+id/play_menu_multiplayer"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/play_menu_player_vs_ai_button"
         android:layout_alignLeft="@+id/play_menu_single_player"
@@ -134,6 +135,7 @@
         android:layout_width="@dimen/play_menu_button_width"
         android:layout_height="@dimen/play_menu_button_height"
         android:layout_alignTop="@+id/play_menu_online_normal_button"
+        android:layout_toRightOf="@id/play_menu_online_normal_button"
         android:layout_marginLeft="@dimen/play_menu_button_hardcore_left"
         android:background="@drawable/mainmenubutton"
         android:text="@string/hardcore_online"

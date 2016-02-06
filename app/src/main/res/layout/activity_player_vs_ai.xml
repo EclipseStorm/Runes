@@ -25,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/battle_player1_avatar"
+        android:layout_toRightOf="@id/battle_player1_avatar"
         android:layout_marginLeft="@dimen/battle_player_name_margin"
         android:textColor="@color/colorPrimaryDark"
         android:text="Player 1 Name"
@@ -158,6 +159,28 @@
         android:textColor="@color/colorAccent"
         android:textSize="@dimen/battle_state_message_text_size" />
 
+    <!-- Attacking / Defending position indicators -->
+
+    <TextView
+        android:id="@+id/battle_player1_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/battle_player1_character"
+        android:layout_below="@id/battle_player1_character"
+        android:layout_marginTop="@dimen/battle_position_top"
+        android:textColor="@color/white"
+        android:textSize="@dimen/battle_position_text_size" />
+
+    <TextView
+        android:id="@+id/battle_player2_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/battle_player2_character"
+        android:layout_below="@id/battle_player2_character"
+        android:layout_marginTop="@dimen/battle_position_top"
+        android:textColor="@color/white"
+        android:textSize="@dimen/battle_position_text_size" />
+
     <!-- Score indicator message for both players -->
 
     <TextView
@@ -165,7 +188,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/battle_player1_character"
-        android:layout_below="@+id/battle_player1_character"
+        android:layout_below="@+id/battle_player1_position"
         android:layout_marginTop="@dimen/battle_score_top"
         android:textColor="@color/white"
         android:textSize="@dimen/battle_score_text_size" />
@@ -175,33 +198,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/battle_player2_character"
-        android:layout_below="@+id/battle_player2_character"
+        android:layout_below="@+id/battle_player2_position"
         android:layout_marginTop="@dimen/battle_score_top"
         android:textColor="@color/white"
         android:textSize="@dimen/battle_score_text_size" />
-
-    <!-- Attacking / Defending position indicators -->
-
-    <TextView
-        android:id="@+id/battle_player1_position"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/battle_player1_character"
-        android:layout_alignBottom="@+id/battle_player1_character"
-        android:layout_marginBottom="5dp"
-        android:textColor="@color/white"
-        android:textSize="@dimen/battle_position_text_size" />
-
-    <TextView
-        android:id="@+id/battle_player2_position"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/battle_player2_character"
-        android:layout_alignBottom="@+id/battle_player2_character"
-        android:layout_marginBottom="5dp"
-        android:textColor="@color/white"
-        android:textSize="@dimen/battle_position_text_size" />
-
 
     <!-- Info message -->
 
