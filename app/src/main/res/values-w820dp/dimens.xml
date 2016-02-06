@@ -56,6 +56,8 @@
     <dimen name="battle_player_rank_margin">10dp</dimen>
     <dimen name="battle_player_life_top">10dp</dimen>
     <dimen name="battle_player_life_horizontal">10dp</dimen>
+    <dimen name="battle_player_life_bar_width">360dp</dimen>
+    <dimen name="battle_player_life_bar_height">80dp</dimen>
     <dimen name="battle_character_width">420dp</dimen>
     <dimen name="battle_character_height">480dp</dimen>
     <dimen name="battle_character_top">20dp</dimen>

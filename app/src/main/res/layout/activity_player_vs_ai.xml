@@ -54,15 +54,17 @@
 
     <TextView
         android:id="@+id/battle_player1_life"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/battle_player_life_bar_width"
+        android:layout_height="@dimen/battle_player_life_bar_height"
         android:layout_below="@+id/battle_player1_level"
         android:layout_alignLeft="@+id/battle_player1_level"
         android:layout_marginTop="@dimen/battle_player_life_top"
         android:layout_marginLeft="@dimen/battle_player_life_horizontal"
+        android:paddingLeft="10dp"
         android:textColor="@color/colorPrimaryDark"
         android:text="Player 1 Life"
-        android:textSize="@dimen/battle_player_life_text_size" />
+        android:textSize="@dimen/battle_player_life_text_size"
+        android:background="@drawable/lifebar" />
 
 
     <!--  Top-right profile info of Player 2 -->
@@ -108,15 +110,17 @@
 
     <TextView
         android:id="@+id/battle_player2_life"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/battle_player_life_bar_width"
+        android:layout_height="@dimen/battle_player_life_bar_height"
         android:layout_below="@+id/battle_player2_rank"
         android:layout_alignRight="@+id/battle_player2_rank"
         android:layout_marginTop="@dimen/battle_player_life_top"
         android:layout_marginRight="@dimen/battle_player_life_horizontal"
+        android:paddingLeft="10dp"
         android:textColor="@color/colorAccent"
         android:text="Player 2 Life"
-        android:textSize="@dimen/battle_player_life_text_size" />
+        android:textSize="@dimen/battle_player_life_text_size"
+        android:background="@drawable/lifebar" />
 
 
     <!--  Images for both players' mages -->
